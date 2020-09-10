@@ -1,0 +1,11 @@
+extends layout
+block content
+    h1 Login here
+    form(action="/login", method="post")
+        #form-group
+            lable Username:
+            input.form-control(name='username', type='text')
+        #form-group
+            lable Password:
+            input.form-control(name='password', type='password')
+        input.btn.btn-primary(type='submit', value='Login')
